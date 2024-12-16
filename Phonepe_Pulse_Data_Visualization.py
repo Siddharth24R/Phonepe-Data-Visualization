@@ -9,7 +9,7 @@ from PIL import Image
 from streamlit_option_menu import option_menu
 from contextlib import contextmanager
 
-# ----------------------- PAGE CONFIGURATION ---------------------------
+#PAGE CONFIGURATION
 st.set_page_config(
     page_title="PhonePe Pulse",
     page_icon="💳",
