@@ -100,7 +100,6 @@ def create_geo_visualization(df, value_column, title):
 
 def show_transaction_analysis():
     st.header("Transaction Analysis")
-# [Previous imports and configurations remain the same until the transaction analysis function]
 
 def show_transaction_analysis():
     st.header("Transaction Analysis")
@@ -284,7 +283,7 @@ def show_user_analysis():
         # Registered Users by District
         fig_reg_users = px.bar(state_df,
                               x='registereduser',
-                              y='districts',  # Fixed column name from 'district' to 'districts'
+                              y='districts', 
                               orientation='h',
                               title=f'Registered Users by District in {selected_state}',
                               color_discrete_sequence=['#ff7f0e'])  # Orange color
@@ -294,13 +293,11 @@ def show_user_analysis():
         # App Opens by District
         fig_app_opens = px.bar(state_df,
                               x='appopens',
-                              y='districts',  # Fixed column name from 'district' to 'districts'
+                              y='districts',  
                               orientation='h',
                               title=f'App Opens by District in {selected_state}',
                               color_discrete_sequence=['#1f77b4'])  # Blue color
         st.plotly_chart(fig_app_opens, use_container_width=True)
-
-# [Rest of the code remains exactly the same]
 
 def show_geographical_insights():
     st.header("Geographical Insights")
