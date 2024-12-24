@@ -195,7 +195,6 @@ def show_transaction_analysis():
                           orientation='h',
                           title='Transaction Count by State')
     st.plotly_chart(fig_bar_count, use_container_width=True)
-# [Previous code remains the same until show_user_analysis function]
 
 def show_user_analysis():
     st.header("User Analysis")
@@ -355,7 +354,6 @@ def show_geographical_insights():
         )
         st.plotly_chart(fig, use_container_width=True)
 
-# Add this new function to your existing code
 def show_facts_analysis():
     st.header("PhonePe Facts and Insights")
     
@@ -542,7 +540,7 @@ def show_facts_analysis():
     finally:
         cursor.close()
         conn.close()
-# Modify your main() 
+#  main() 
 def main():
     with st.sidebar:
         selected = option_menu(
@@ -587,7 +585,6 @@ def main():
             - 🏆 Digital gold
             """)
             
-            # Additional Features
             st.write("""
             _In recent years, PhonePe has expanded its services to include insurance, lending, and wealth management. Additional features include:_
             """)
